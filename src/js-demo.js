@@ -3,7 +3,7 @@ const { NavoClient } = require('@navoio/warehouse');
 
 async function run() {
     const client = new NavoClient(config.url);
-    await client.authorize(config.client, config.apiKey);
+    await client.authenticate(config.client, config.apiKey);
     console.log('Navo Client authorized.');
     const jobs = await client.jobs.getAll();
     console.log(`${jobs.length} jobs found.`);

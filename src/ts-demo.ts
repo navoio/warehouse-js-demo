@@ -2,8 +2,8 @@ import config from './config';
 import { NavoClient } from '@navoio/warehouse';
 
 async function run() {
-    const client = new NavoClient(config.url, { username: config.client, password: config.apiKey });
-    await client.authorize(config.client, config.apiKey);
+    const client = new NavoClient(config.url);
+    await client.authenticate(config.client, config.apiKey);
     console.log('Navo Client authorized.');
     const jobs = await client.jobs.getAll();
     console.log(`${jobs.length} jobs found.`);
