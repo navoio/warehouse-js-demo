@@ -1,0 +1,35 @@
+{
+  "name": "warehouse-js-demo",
+  "version": "1.0.0",
+  "description": "Demo application using the Navo Warehouse JS client.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "run:js": "node ./src/js-demo.js",
+    "run:ts": "ts-node ./src/ts-demo.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navoio/warehouse-js-demo.git"
+  },
+  "keywords": [
+    "navo",
+    "client",
+    "demo"
+  ],
+  "author": "Navo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navoio/warehouse-js-demo/issues"
+  },
+  "homepage": "https://github.com/navoio/warehouse-js-demo#readme",
+  "dependencies": {
+    "@navoio/warehouse": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.18",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}
